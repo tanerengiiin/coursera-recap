@@ -102,14 +102,14 @@ footer .container{
   width: 100%;
 }
 #hero__section--preview {
-  width: 50%;
+  width: 60%;
 }
 #hero__section--preview button {
   margin-top: 40px;
 }
 #hero__section--image img {
   width: 400px;
-  height: 440px;
+  height: 480px;
   border-radius: 16px;
   object-fit: cover;
 }
