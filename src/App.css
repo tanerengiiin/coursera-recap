@@ -44,6 +44,7 @@ nav ul {
   display: flex;
   align-items: center;
   list-style: none;
+  transition: all 1s ease;
 }
 
 nav ul li {
@@ -316,4 +317,74 @@ input, select{
 #booking__content img{
   width: 50%;
   border-radius: 16px;
+}
+
+@media only screen and (max-width: 900px) {
+  #specials__section--images {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: space-between;
+    grid-row-gap: 30px;
+  }
+  #testimonials__section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    gap: 20px;
+  }
+  #about__section{
+    flex-direction: column;
+  }
+  #about__left{
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom: 32px;
+  }
+  #about__right{
+    width: 100%;
+  }
+  footer .container{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 30px;
+  }
+  #hero__section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+  }
+  #hero__section--preview {
+    width: 100%;
+    margin-bottom: 32px;
+  }
+  #booking__content{
+    flex-direction: column;
+  }
+  #booking__content img{
+    margin-top: 64px;
+    width: 80%;
+    border-radius: 16px;
+  }
+
+  .nav-false{
+    display: none;
+  }
+  nav ul{
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+  }
+  nav ul {
+    flex-direction: column;
+    padding: 20px 0;
+  }
+  
+  nav ul li {
+    margin: 20px 0px;
+  }
+  
 }
